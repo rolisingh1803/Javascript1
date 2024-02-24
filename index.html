@@ -13,6 +13,14 @@
             text-transform: capitalize;
             /* list-style-type:disc; */
         }
+
+        table{
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -109,9 +117,73 @@
 
 <hr>
 
-<thead>
-    <td>Time Table</td>
-</thead>
+<table >
+    <thead>
+        <tr>
+            <th colspan="7"> Time Table</th>
+        </tr>
+        <tr>
+            
+            <td>Mon</td>
+            <td>Tus</td>
+            <td>Wed</td>
+            <td>Thur</td>
+            <td>Fri</td>
+            <td>Sat</td>
+    
+            <!-- <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tus</th>
+            <th>Wed</th>
+            <th>Thur</th>
+            <th>Fri</th>
+            <th>Sat</th> -->
+            
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr>
+        
+        <td>Math</td>
+        <td>Math</td>
+        <td>Math</td>
+        <td>Math</td>
+        <td>Math</td>
+        <td>Math</td>
+    </tr>
+    <tr>
+       
+        <td>Science</td>
+        <td>Science</td>
+        <td>Science</td>
+        <td>Science</td>
+        <td>Science</td>
+        <td>Science</td>
+    </tr>
+    <tr>
+        <td colspan="6" style="text-align: center;">Lunch</td>
+    </tr>
+    <tr>
+        
+        <td>SST</td>
+        <td>SST</td>
+        <td>SST</td>
+        <td>SST</td>
+        <td>SST</td>
+        <td rowspan="2">Games</td>
+    </tr>
+    <tr>
+       
+        <td>CS</td>
+        <td>CS</td>
+        <td>CS</td>
+        <td>CS</td>
+        <td>CS</td>
+        
+    </tr>
+    </tbody>
+</table>
 </body>
 
 </html>
