@@ -5,29 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         video{
+            border-radius: 50px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>hello world.</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque perspiciatis nemo dolores tempore a fugiat
-        quis cupiditate, odio iste eius, esse officia consequuntur sunt! Odit reiciendis explicabo hic doloremque quia.
-    </p>
-    <table>
-        <thead>
-            <tr>
-                <td>
+   
 
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-           <tr>
-            <td>
-                
-            </td>
-           </tr>>
-        </tbody>
-    </table>
+        <!-- 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5ccq_nLHneE?si=lp_hNJOu6zcDnnJ2"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe> -->
+
+        <hr>
+
+    <iframe src="https://www.wikipedia.org/" width="560" height="315"></iframe>
+    <hr>
+    <audio controls > <!-- autoplay muted -->
+        <source src="/Teri Baaton Mein Aisa Uljha Jiya(PagalWorld.com.cm).mp3" type="audio/mpeg">
+        This is a bollywood song.
+    </audio>
+    <hr>
+    
+     <video controls height="200px" width="100%" poster="/laptopimage.jpg">  <!--autoplay muted loop -->
+        <source src="/View.mp4" type="video/mp4" />
+ 
+         this is normal view.
+    </video>
+
+    <hr>
+
+
+    <form>
+        <div>
+        <label for="username" >username</label>
+        <input type="text" id="username" >
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+    </div>
+        <div>
+        <label for="textarea"> Address</label>
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+    </div>
+    <input type="submit" value="submit">'
+    <button >submit</button>
+    </form>
 </body>
 
 </html>
