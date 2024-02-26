@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,17 +9,20 @@
          video{
             border-radius: 50px;
         }
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
 </head>
 
 <body>
    
 
-        <!-- 
+    
     <iframe width="560" height="315" src="https://www.youtube.com/embed/5ccq_nLHneE?si=lp_hNJOu6zcDnnJ2"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe> -->
+        allowfullscreen></iframe> 
 
         <hr>
 
@@ -39,23 +42,66 @@
 
     <hr>
 
+    <br>
+    <br>
+    <h1 style="text-align: center;">Normal Web Form</h1>
 
     <form>
         <div>
-        <label for="username" >username</label>
-        <input type="text" id="username" >
+        <label for="username" >username </label>
+        <input type="text" id="username"  value="Roli" readonly disabled>
     </div>
     <div>
-        <label for="email">Email</label>
-        <input type="email" id="email">
+        <label for="email" >Email</label>
+        <input type="email" id="email"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
     </div>
         <div>
         <label for="textarea"> Address</label>
-        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        <textarea name="" id="textarea" cols="30" rows="10" placeholder="Enter your Address here" required ></textarea>
     </div>
-    <input type="submit" value="submit">'
-    <button >submit</button>
+    <div>
+        <label for="password">password</label>
+        <input type="password" id="password">
+    </div>
+    <div>
+        <label for="numder">Math Maths</label>
+        <input type="number" id="number" max="5" min="2">
+    </div>
+    <div>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Male">Male
+    </div>
+    <div>
+        <label for="checkbox">Hobbies</label>
+        <input type="checkbox" name="interest" value="singing">singing
+        <input type="checkbox" name="interest" value="Dancing">Dancing
+        <input type="checkbox" name="interest" value="Reading">Reading
+        <input type="checkbox" name="interest" value="cooking">cooking
+    </div>
+    <div>
+        <label for="country">Fav Country:</label>
+        <select name="Country" id="Country">
+            <option value="Usa">USA</option>
+            <option value="India">India</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="China">China</option>
+            <option value="Nepal">Nepal</option>
+        </select>
+    </div>
+    <div>
+        <label for="country">Select a Country</label>
+        <input type="text" id="country" name="country" list="Countries" >
+        <datalist id="Countries">
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+        </datalist>
+    </div>
+    <input type="submit" value="submit">
+    
     </form>
+
+   
 </body>
 
-</html>
+</html> 
